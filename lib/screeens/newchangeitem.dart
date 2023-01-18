@@ -59,7 +59,9 @@ class _TambahEditPageState extends State<TambahEditPage> {
   @override
   initState() {
     itemproyek = widget.proyek;
-    idproyek = itemproyek['objectId'];
+    idproyek = (itemproyek.length > 9)
+        ? itemproyek['proyek_relasi']['objectId']
+        : itemproyek['objectId'];
     init();
 
     super.initState();

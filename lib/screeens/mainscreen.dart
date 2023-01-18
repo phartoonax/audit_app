@@ -38,6 +38,7 @@ class _MainScreenState extends State<MainScreen> {
     DataQueryBuilder queryBuilder = DataQueryBuilder()
       ..related = ["penanggung_jawab"]
       ..relationsDepth = 1
+      ..sortBy = ["created ASC"]
       ..whereClause =
           "penanggung_jawab.objectId='${widget.userdata.getObjectId()}'";
     setState(() {
