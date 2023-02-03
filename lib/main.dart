@@ -17,11 +17,11 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-const String SERVER_URL = "https://eu-api.backendless.com";
-const String APPLICATION_ID = "7CA5C0C0-D75E-06E3-FF2B-21190A25AD00";
-const String ANDROID_API_KEY = "373D04CC-DD8F-4211-887C-CFE61EA1D58C";
-const String IOS_API_KEY = "C849FF3F-8B17-4103-A512-6BC7AA9C765F";
-const String JS_API_KEY = "86C6B81F-64A8-407F-93FA-BA5E4648E025";
+   const String SERVER_URL = "https://eu-api.backendless.com";
+   const String APPLICATION_ID = "B4767E6C-1CFB-2E7D-FF6D-8E06E61C3900";
+   const String ANDROID_API_KEY = "37EE5605-1A6E-45FE-B475-90CAFBB5D2A1";
+   const String IOS_API_KEY = "868DBCE3-EAE9-436E-AD67-557A5ADF44C7";
+   const String JS_API_KEY = "11EFD95E-1E59-4853-8E0F-D3A0ADEED12D";
 
 class _MyAppState extends State<MyApp> {
   @override

@@ -36,6 +36,14 @@ class _DetailProyekState extends State<DetailProyek> {
     daftarharian.clear();
 
     itemproyek = widget.proyek;
+    Backendless.data
+        .of('proyek')
+        .findById(widget.proyek['objectId'], relationsDepth: 1, relations: [
+      "penanggung_jawab"
+    ]).then((value) => setState(() {
+              itemproyek.clear();
+              itemproyek = value!;
+            }));
 
     if (itemproyek.length > 9) {
       Backendless.data

@@ -262,8 +262,10 @@ class _TambahEditPageState extends State<TambahEditPage> {
                                                     }).then(
                                                       (value) {
                                                         if (value != null) {
-                                                          listdropdownjenis
-                                                              .add(value);
+                                                          setState(() {
+                                                            listdropdownjenis
+                                                                .add(value);
+                                                          });
                                                           final sbarnoticeabsen =
                                                               SnackBar(
                                                             behavior:

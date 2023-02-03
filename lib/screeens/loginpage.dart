@@ -1,7 +1,6 @@
 import 'package:audit_app/screeens/mainscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:backendless_sdk/backendless_sdk.dart';
-import 'package:email_validator/email_validator.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
