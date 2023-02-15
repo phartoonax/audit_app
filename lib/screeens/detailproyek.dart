@@ -38,7 +38,7 @@ class _DetailProyekState extends State<DetailProyek> {
     itemproyek = widget.proyek;
     Backendless.data
         .of('proyek')
-        .findById(widget.proyek['objectId'], relationsDepth: 1, relations: [
+        .findById(itemproyek['objectId'], relationsDepth: 1, relations: [
       "penanggung_jawab"
     ]).then((value) => setState(() {
               itemproyek.clear();
@@ -108,7 +108,7 @@ class _DetailProyekState extends State<DetailProyek> {
             context,
             MaterialPageRoute(
                 builder: (context) => TambahEditPage(
-                      proyek: widget.proyek,
+                      proyek: itemproyek,
                       userdata: widget.userdata,
                       isnewday: isnewday,
                       idharian:
